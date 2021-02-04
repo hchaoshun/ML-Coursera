@@ -54,8 +54,8 @@ def sigmoid_gradient(z):
 
 
 def backprop(params, input_size, hidden_size, num_labels, X, y, learning_rate):
-    m = X.shape[0]
-    X = np.matrix(X)
+    m = X.shape[0] # 400
+    X = np.matrix(X) 
     y = np.matrix(y)
 
     # reshape the parameter array into parameter matrices for each layer
